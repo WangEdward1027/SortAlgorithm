@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-//堆排序 heapsort
+//堆排序 HeapSort
 
 #define SWAP(arr, i ,j){	\
 	int temp = arr[i];		\
