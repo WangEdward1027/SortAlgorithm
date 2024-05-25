@@ -2,7 +2,7 @@
 #include <stdio.h>
 #define SIZE(a) (sizeof(a)/sizeof(a[0]))
 
-//快速排序(双向分区)
+//快速排序 (双向分区)
 
 void print_array(int arr[], int n) {
 	for (int i = 0; i < n; i++) {
