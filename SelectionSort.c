@@ -2,7 +2,7 @@
 #include <stdio.h>
 #define SIZE(a) (sizeof(a)/sizeof(a[0]))
 
-//选择排序
+//简单选择排序
 
 void swap(int* a, int* b) {
 	int temp = *b;
