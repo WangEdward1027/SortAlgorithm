@@ -52,6 +52,7 @@ void build_heap(int arr[], int n) {
 void heap_sort(int arr[], int n) {
 	//1.构建大顶堆
 	build_heap(arr, n);
+	//print_array(arr, 10); //调试信息
 	//2.初始化无序区的长度
 	int len = n;
 	//3.交换堆顶元素和无序区最后一个元素，直到 len == 1
@@ -59,11 +60,13 @@ void heap_sort(int arr[], int n) {
 		SWAP(arr, 0, len-1);
 		len--;
 		heapify(arr, 0, len);	//堆化
+		//print_array(arr, 10); //调试信息
 	}
 }
 
 int main(void) {
-	int arr[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+	//int arr[] = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+	int arr[] = { 16, 1, 45, 23, 99, 2, 18, 67, 42, 10 };
 	heap_sort(arr, 10);
 	print_array(arr, 10);
 
